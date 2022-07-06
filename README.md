@@ -1,1 +1,35 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8095329&assignment_repo_type=AssignmentRepo)
+## App
+website link [LearnByBot](https://chatbot-fr.netlify.app/)
+## ChatBot api
+
+The api is hosted in heroku
+End points is in [API](https://chatbot-api-v1.herokuapp.com/v1/api/messages)
+## Setup
+
+The first thing to do is to clone the repository:
+
+```sh
+$ git clone https://github.com/hassan-elghiat/chatBot-web.git
+$ cd chatBot-web
+```
+
+Create a virtual environment to install dependencies in and activate it:
+
+```sh
+$ py -3 -m venv .venv
+$ .venv\scripts\activate
+```
+
+Then install the dependencies:
+
+```sh
+(venv)$ pip install -r requirements.txt
+```
+
+
+Once `pip` has finished downloading the dependencies:
+```sh
+(venv)$ python manage.py runserver
+```
+End point on local is in `http://127.0.0.1:8000/v1/api/messages`.
+
